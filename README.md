@@ -16,4 +16,4 @@ This script was developed to recieve tech news straight to your inbox.This scrip
 - Contributions are welcomed in order to improve this script.
 
 
-**Note:  This script is under MIT License **
+**Note: This script is under MIT License**
