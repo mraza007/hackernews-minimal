@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 requests = "*"
+flask = "*"
+flask-mail = "*"
 
 [dev-packages]
 pylint = "*"
