@@ -18,7 +18,8 @@ for x in range(0,100):
 			url.append(v['url'])
 			title.append(v['title'])
 		except KeyError:
-			
+			pass
+
 
 json_data = dict(zip(title,url))
 # print(json_data)
@@ -34,15 +35,19 @@ mail_settings = {
 app.config.update(mail_settings)
 mail = Mail(app)
 @app.route("/")
-def email():
-	msg = Message(subject="Hacker News",
-	              sender=app.config.get("MAIL_USERNAME"),
-	              recipients=[""], # replace with your email for testing
-	              html=render_template('index.html',data=json_data.items()))
-	mail.send(msg)
-	return "sent"
+def home():
+	return render_template('index.html',data=json_data.items())
 
 	
 
+   # Email logic
+
+	# msg = Message(subject="Hacker News",
+	# 	              sender=app.config.get("MAIL_USERNAME"),
+	# 	              recipients=[""], # replace with your email for testing
+	# 	              html=render_template('index.html',data=json_data.items()))
+	# mail.send(msg) 
 
 
+if __name__ == '__main__':
+	app.run()

@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Hacker News</title>
-</head>
-<body>
-{% for titles,links in data %}
-<ul>
-	<li><a href="{{links}}">{{titles}}</a></li>
-</ul>
+<html lang="en" >
 
+<head>
+  <meta charset="UTF-8">
+  <title>Hacker News Minimalistic</title>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/static/assets/css/style.css">
+</head>
+
+<body>
+<h1>Hacker News Redefined </h1>
+<div class="link-cont">
+      <div class="link-wrapper">
+          <a class="link hover-12" href="https://goo.gl/forms/oSjRVHqCZlas85gk1" style="font-size: 12px">Subscribe to Recieve new 100 Hacker News articles in your email every night</a>
+      </div>
+  {% for titles,links in data %}
+<div class="link-cont">
+    <div class="link-wrapper">
+        <a class="link hover-12" href="{{links}}">{{titles}}</a>
+    </div>
 {% endfor %}
+</div>
+<script  src="/static/assets/js/index.js"></script>
 </body>
 </html>

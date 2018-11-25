@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hacker News</title>
+</head>
+<body>
+{% for titles,links in data %}
+<ul>
+	<li><a href="{{links}}">{{titles}}</a></li>
+</ul>
+
+{% endfor %}
+</body>
+</html>
