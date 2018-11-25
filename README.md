@@ -11,7 +11,7 @@ and you can sign up to receive new stories in your email.
 #### Future Plans
 - This can be further improved.
 - Adding the sms functionality so the user can receive top hackernews articles on his phone.
-- Hosting it on [APP](https://hackernews-minimal.herokuapp.com/) 
+- Hosted  [Here](https://hackernews-minimal.herokuapp.com/) 
 - Make the api load time faster
 - `heroku` branch is deployed.
 
