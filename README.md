@@ -1,5 +1,6 @@
-# Hacker News Notification Script.
-This script was developed to recieve tech news straight to your inbox.This script is fully customized further more you can customize this script according to your needs.
+# Minimal Hacker News.
+This is now turned into a webapp.
+and you can sign up to receive new stories in your email.
 
 ## Usage
 - git clone `repo`
