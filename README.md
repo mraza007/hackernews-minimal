@@ -9,12 +9,15 @@ and you can sign up to receive new stories in your email.
 - lastly `FLASK_APP=index.py flask run `
 
 #### Future Plans
-- This script can be further improved.
+- This can be further improved.
 - Adding the sms functionality so the user can receive top hackernews articles on his phone.
-- Hosting it on [PythonAnywhere](https://www.pythonanywhere.com/) 
+- Hosting it on [APP](https://hackernews-minimal.herokuapp.com/) 
+- Make the api load time faster
+- `heroku` branch is deployed.
 
 ### Contributions
-- Contributions are welcomed in order to improve this script.
+- Contributions are welcomed in order to improve this minimal web.
 
+Thanks to [Thomas](https://twitter.com/thomAufresne) for a simple UI.
 
 **Note: This script is under MIT License**
