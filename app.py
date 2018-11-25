@@ -2,9 +2,6 @@ import requests
 from flask import Flask , render_template
 from flask_mail import Mail, Message
 app = Flask(__name__)
-
-app.config.update(mail_settings)
-mail = Mail(app)
 @app.route("/")
 def home():
 	# hackernews api
