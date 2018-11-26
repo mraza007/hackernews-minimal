@@ -1,14 +1,14 @@
 import requests
 from flask import Flask , render_template
 from flask_mail import Mail, Message
-from flask.ext.cache import Cache
+from flask_caching import Cache
 
 app = Flask(__name__)
 cache = Cache(app,config={'CACHE_TYPE':'simple'})
 
 
 @app.route("/")
-@cache.cached(timeout=60)
+@cache.cached(timeout=3600)
 def home():
 	# hackernews api
 	r = requests.get('https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty')

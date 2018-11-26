@@ -9,6 +9,7 @@ flask = "*"
 flask-mail = "*"
 gunicorn = "*"
 flask-cache = "*"
+flask-caching = "*"
 
 [dev-packages]
 pylint = "*"
