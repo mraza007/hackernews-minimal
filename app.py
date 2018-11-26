@@ -1,7 +1,10 @@
 import requests
 from flask import Flask , render_template
 from flask_mail import Mail, Message
+from flask.ext.cache import Cache
 app = Flask(__name__)
+cache = Cache(app,config={'CACHE_TYPE':'simple'})
+@cache.cached(timeout=60)
 @app.route("/")
 def home():
 	# hackernews api
